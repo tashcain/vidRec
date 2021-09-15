@@ -11,10 +11,10 @@ import {
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/vidRec">
         <Switch>
-          <Route exact path="/main/:id" component={Main} />
-          <Route exact path="/" component={() => <Redirect to="/main/:id" />} />
+          <Route exact path="/" component={Main} />
+          {/* <Route exact path="/" component={() => <Redirect to="/main/:id" />} /> */}
         </Switch>
       </Router>
     </div>
